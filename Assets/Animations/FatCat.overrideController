@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FatCat
+  m_Controller: {fileID: 9100000, guid: c7582ec4f2745be4cb75474d9997770e, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 0919e9699da640f4c92f53dd6c4488f1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7287114a89e511d4392acb9539ed4b95, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 637361625673bbd49b1d441270ae9790, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ab734046635323b42b8a8de2fd999760, type: 2}

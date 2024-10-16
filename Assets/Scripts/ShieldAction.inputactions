@@ -1,0 +1,45 @@
+{
+    "name": "ShieldAction",
+    "maps": [
+        {
+            "name": "Touch",
+            "id": "8837f8ff-a573-4d51-8f77-4aa8767c9404",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "8977ef76-4427-43c6-a08d-c490cf0c1896",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "96cdd612-a9fd-4ce1-a866-416b3c8e8280",
+                    "path": "<Touchscreen>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "355b05c1-8b86-43b9-ae17-9955cabdfc20",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

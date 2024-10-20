@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
         isPlaying = true;
         Time.timeScale = 1.0f;
         gameoverPanel.SetActive(false);
-        InvokeRepeating("CreateSquare", 0.0f, 0.5f);
+        StartCoroutine(SpawnCoroutine());
     }
 
     // Update is called once per frame
@@ -49,17 +49,29 @@ public class GameManager : MonoBehaviour
 
     }
 
-    private void CreateSquare()
+    IEnumerator SpawnCoroutine()
     {
-        Instantiate(square);
+        WaitForSeconds wait = new WaitForSeconds(0.5f);
+        while (isPlaying == true)
+        {
+            Instantiate(square);
+            yield return wait;
+        }
     }
 
     public void GameOver()
     {
+        StartCoroutine(EndCoroutine());
+    }
+    
+    IEnumerator EndCoroutine()
+    {
         isPlaying = false;
         anim.SetBool("isDied", !isPlaying);
-
-        Invoke("EndPlaying", 0.5f);
+        
+        yield return new WaitForSeconds(0.5f);
+        
+        EndPlaying();
     }
 
     private void EndPlaying()
